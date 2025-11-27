@@ -1,11 +1,19 @@
 <!doctype html>
-<html lang="en" dir="rtl" data-baseline="stable-2025-10-01__rails-460px__galC-6-only">
+
+<html lang="he" dir="rtl" data-baseline="stable-2025-10-01__rails-460px__galC-6-only">
+
 <head>
+
 <meta charset="utf-8" />
+
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Gardenicity — Growth TAMA Green</title>
+
+<title>גרדניסיטי — צמיחה</title>
+
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet" />
+
 <style>
+
 /* ==========================================================
 LIEBLING PRO — FULL FONT FAMILY (ALL WEIGHTS)
 Internal family name confirmed: "Liebling Pro"
@@ -108,61 +116,44 @@ direction: rtl;
 :root{
 /* HERO */
 --shift:0px; --titleOpacity:0; --linksOpacity:0; --heroAlpha:1; --heroBlur:0;
-
 /* S1 */
 --s1:0; --s1Overlay:0; --s1Y:0px; --s1ImgOpacity:0;
-
 /* S2 */
 --s2:0; --s2Overlay:0; --s2Y:0px; --s2ImgOpacity:0;
-
 /* gallery-A-Left */
 --galA:0;
 --galAImg0Opacity:0; --galAImg1Opacity:0; --galAImg2Opacity:0; --galAImg3Opacity:0;
 --galAReady:0;
-
 /* NEW: TAMA (Like S2) */
 --sTAMA:0; --sTAMAOverlay:0; --sTAMAY:0px; --sTAMAImgOpacity:0;
-
 /* S3 (full bleed) */
 --s3:0; --s3ImgOpacity:0; --s3Scale:1;
-
 /* S4 */
 --s4:0; --s4Overlay:0; --s4Y:0px; --s4ImgOpacity:0;
-
 /* NEW MAP SECTION */
 --sMapA:0; --sMapAImgOpacity:0; /* --sMapAScale removed */
-
 /* S5 */
 --s5:0; --s5Overlay:0; --s5Y:0px; --s5ImgOpacity:0;
-
 /* gallery-B-Center */
 --galB:0;
 --galBImg0Opacity:0; --galBImg1Opacity:0; --galBImg2Opacity:0; --galBImg3Opacity:0; --galBImg4Opacity:0;
 --galBReady:0;
-
 /* S8 (full bleed) */
 --s8:0; --s8ImgOpacity:0; --s8Scale:1; --s8Ready:0;
-
 /* S9 */
 --s9:0; --s9Overlay:0; --s9Y:0px; --s9ImgOpacity:0;
-
 /* gallery-C-Right (media left, no text) */
 --galC:0;
 --galCImg0Opacity:0; --galCImg1Opacity:0; --galCImg2Opacity:0; --galCImg3Opacity:0; --galCImg4Opacity:0; --galCImg5Opacity:0;
 --galCReady:0;
-
 /* S11 (left text / right image) */
 --s11:0; --s11Overlay:0; --s11Y:0px; --s11ImgOpacity:0;
-
 /* S12 (full bleed) */
 --s12:0; --s12ImgOpacity:0; --s12Scale:1; --s12Ready:0;
-
 /* S13 (like S1) */
 --s13:0; --s13Overlay:0; --s13Y:0px; --s13ImgOpacity:0;
-
 /* S14 (like S2) */
 --s14:0; --s14Overlay:0; --s14Y:0px; --s14ImgOpacity:0;
-
 /* S15 (full bleed + centered overlay) */
 --s15:0; --s15Overlay:0; --s15Y:0px; --s15ImgOpacity:0; --s15Scale:1; --s15Ready:0;
 }
@@ -180,23 +171,19 @@ background:url("assets/hero1growth.jpg") center/cover no-repeat;
 opacity:0; animation:heroIn 900ms ease-out forwards; pointer-events:none;
 }
 @keyframes heroIn{ from{opacity:0} to{opacity:1} }
-
 .hero-media{
 /* RTL: Swapped Left/Right constraints */
-position:absolute; top:96px; bottom:96px; 
+position:absolute; top:96px; bottom:96px;
 right:96px; /* Was left */
-left:82px;  /* Was right */
+left:82px; /* Was right */
 display:flex; align-items:flex-end; justify-content:flex-start; overflow:hidden;
 }
-
 .col{ position:relative; max-width:700px; transform:translateY(var(--shift)); will-change:transform; }
-
 .hero-title{ margin:0 0 24px 0; font-weight:400; font-size:100px; line-height:100px; opacity:var(--titleOpacity); }
 .hero-title .line{ display:block; }
 .hero-links{ display:flex; flex-direction:column; gap:10px; font-size:24px; line-height:30px; opacity:var(--linksOpacity); }
 .hero-links a{ color:#fff; text-decoration:none; transition:color .2s ease; }
 .hero-links a:hover,.hero-links a:focus-visible{ color:#00A86B; }
-
 .driver{ height:200vh; }
 
 /* ===== PINNED FRAMES ===== */
@@ -310,16 +297,15 @@ pointer-events: auto;
 }
 
 /* ======================================================
-   RTL LAYOUT FLIPS
-   General Logic:
-   - "Left Rail" (Text) now anchors RIGHT.
-   - "Right Image" now anchors LEFT.
-   - "Right Rail" (Text) now anchors LEFT.
-   - "Left Image" now anchors RIGHT.
-   - 96px Margin -> Right
-   - 82px Margin -> Left
-   ====================================================== */
-
+RTL LAYOUT FLIPS
+General Logic:
+- "Left Rail" (Text) now anchors RIGHT.
+- "Right Image" now anchors LEFT.
+- "Right Rail" (Text) now anchors LEFT.
+- "Left Image" now anchors RIGHT.
+- 96px Margin -> Right
+- 82px Margin -> Left
+====================================================== */
 /* S1 image LEFT (text right) */
 .s1-frame {
 top: 96px;
@@ -329,7 +315,6 @@ right: calc(96px + 460px + 96px); /* Was left */
 left: 82px; /* Was right */
 opacity: var(--s1ImgOpacity);
 }
-
 /* S2 image RIGHT (mirror) */
 .s2-frame{
 top:96px; bottom:96px;
@@ -338,10 +323,9 @@ right: 96px; /* Was left */
 left: calc(82px + 96px + 460px); /* Was right */
 opacity: var(--s2ImgOpacity);
 }
-
-/* gallery-A-Left (media area) -> Now on LEFT in RTL layout? 
-   Note: LTR desc was "gallery-A-Left (right media area)".
-   In RTL, this should be "Left media area" visually.
+/* gallery-A-Left (media area) -> Now on LEFT in RTL layout?
+Note: LTR desc was "gallery-A-Left (right media area)".
+In RTL, this should be "Left media area" visually.
 */
 .galA-left-frame{
 top:96px; bottom:96px;
@@ -350,7 +334,6 @@ right: calc(96px + 460px + 96px);
 left: 82px;
 display:block;
 }
-
 .galA-left-frame img{
 position:absolute; inset:0;
 width:100%; height:100%;
@@ -363,11 +346,11 @@ will-change:opacity;
 #galA-img3{ opacity: var(--galAImg3Opacity); }
 
 /* NEW: TAMA FRAME (Right Image in RTL, matches S2) */
-.sTAMA-frame { 
-    top: 96px; bottom: 96px; 
-    right: 96px; /* Was left */
-    left: calc(82px + 96px + 460px); /* Was right */
-    opacity: var(--sTAMAImgOpacity); 
+.sTAMA-frame {
+top: 96px; bottom: 96px;
+right: 96px; /* Was left */
+left: calc(82px + 96px + 460px); /* Was right */
+opacity: var(--sTAMAImgOpacity);
 }
 
 /* S3 full-bleed */
@@ -397,7 +380,7 @@ opacity:var(--sMapAImgOpacity);
 /* S5 image RIGHT (Text Left) */
 .s5-frame{
 top:96px; bottom:96px;
-right: 96px; 
+right: 96px;
 left: calc(82px + 96px + 460px);
 opacity: var(--s5ImgOpacity);
 }
@@ -528,14 +511,13 @@ position:fixed; inset:0; z-index:2; pointer-events:none;
 
 /* LEFT rails (NOW RIGHT RAILS in RTL) */
 .s1-rail, .s4-rail, .s9-rail, .s11-rail, .s13-rail{
-position:absolute; top:0; bottom:0; 
+position:absolute; top:0; bottom:0;
 right:96px; /* Was left */
 width:460px; overflow:hidden;
 }
-
 /* RIGHT rails (NOW LEFT RAILS in RTL) */
 .s2-rail, .sTAMA-rail, .s5-rail, .s14-rail{
-position:absolute; top:0; bottom:0; 
+position:absolute; top:0; bottom:0;
 left:96px; /* Was right */
 width:460px; overflow:hidden;
 }
@@ -562,11 +544,9 @@ overflow:hidden;
 transform:translateY(var(--s15Y));
 color:#fff; text-align:center;
 }
-
 .s1-text p, .s2-text p, .sTAMA-text p, .s4-text p, .s5-text p, .s9-text p, .s11-text p, .s13-text p, .s14-text p, .s15-text p{
 margin:0 0 14px 0; font-size:20px; line-height:28px;
 }
-
 .after{ min-height:120vh; }
 
 /* ===== PATCH: Enable S15 links only in S15 ===== */
@@ -810,8 +790,12 @@ overscroll-behavior: auto;
 .frame[style*="opacity: 0"] {
 pointer-events: none !important;
 }
+
+}
 </style>
+
 </head>
+
 <body>
 
 <div class="hero-fixed" id="hero">
@@ -819,15 +803,15 @@ pointer-events: none !important;
 <div class="hero-media" id="hero-media">
 <div class="col" id="hero-col">
 <h1 class="hero-title" id="hero-title">
-<span class="line">Gardenicity</span>
-<span class="line">Growth</span>
+<span class="line">גרדניסיטי</span>
+<span class="line">צמיחה</span>
 </h1>
 <nav class="hero-links" id="hero-links" aria-label="Primary">
-<a href="https://www.megama.net">What Did Geddes See</a>
-<a href="https://www.megama.net">Civic Green</a>
-<a href="https://www.megama.net">Sustenance</a>
-<a href="https://www.megama.net">Leafy SDGs</a>
-<a href="https://www.megama.net">EN/עב</a>
+<a href="https://www.megama.net">מה גדס ראה?</a>
+<a href="https://www.megama.net">ירוק אזרחי</a>
+<a href="https://www.megama.net">מחיה</a>
+<a href="https://www.megama.net">SDG עלעלי</a>
+<a href="https://www.megama.net">עב/EN</a>
 </nav>
 </div>
 </div>
@@ -837,26 +821,22 @@ pointer-events: none !important;
 
 <figure class="frame s1-frame" aria-hidden="true"><img id="s1-img" src="assets/section1.jpg" alt=""></figure>
 <figure class="frame s2-frame" aria-hidden="true"><img id="s2-img" src="assets/section2.jpg" alt=""></figure>
-
 <figure class="frame galA-left-frame" aria-hidden="true">
 <img id="galA-img0" src="assets/gallery-A.jpg" alt="">
 <img id="galA-img1" src="assets/gallery-A1.jpg" alt="">
 <img id="galA-img2" src="assets/gallery-A2.jpg" alt="">
 <img id="galA-img3" src="assets/gallery-A3.jpg" alt="">
 </figure>
-
 <figure class="frame sTAMA-frame" aria-hidden="true"><img id="sTAMA-img" src="assets/tamastreet.jpg" alt=""></figure>
-
 <figure class="frame s3-frame" aria-hidden="true"><img id="s3-img" src="assets/section3.jpg" alt=""></figure>
 <figure class="frame s4-frame" aria-hidden="true"><img id="s4-img" src="assets/section4.jpg" alt=""></figure>
 
 <figure class="frame sMapA-frame" aria-hidden="true" id="mapSection">
 <div id="mapA-container"></div>
-<button id="exit-map-button">Exit Map ↓</button>
+<button id="exit-map-button">יציאה מהמפה ↓</button>
 </figure>
 
 <figure class="frame s5-frame" aria-hidden="true"><img id="s5-img" src="assets/section5.jpg" alt=""></figure>
-
 <figure class="frame galB-center-frame" aria-hidden="true">
 <img id="galB-img0" src="assets/gallery-B.jpg" alt="">
 <img id="galB-img1" src="assets/gallery-B1.jpg" alt="">
@@ -864,13 +844,10 @@ pointer-events: none !important;
 <img id="galB-img3" src="assets/gallery-B3.jpg" alt="">
 <img id="galB-img4" src="assets/gallery-B4.jpg" alt="">
 </figure>
-
 <figure class="frame s8-frame" aria-hidden="true">
 <img id="s8-img" src="assets/section8.jpg" alt="">
 </figure>
-
 <figure class="frame s9-frame" aria-hidden="true"><img id="s9-img" src="assets/section9.jpg" alt=""></figure>
-
 <figure class="frame galC-left-frame" aria-hidden="true">
 <img id="galC-img0" src="assets/gallery-C.jpg" alt="">
 <img id="galC-img1" src="assets/gallery-C1.jpg" alt="">
@@ -879,16 +856,12 @@ pointer-events: none !important;
 <img id="galC-img4" src="assets/gallery-C4.jpg" alt="">
 <img id="galC-img5" src="assets/gallery-C5.jpg" alt="">
 </figure>
-
 <figure class="frame s11-frame" aria-hidden="true"><img id="s11-img" src="assets/section11.jpg" alt=""></figure>
-
 <figure class="frame s12-frame" aria-hidden="true">
 <img id="s12-img" src="assets/section12.jpg" alt="">
 </figure>
-
 <figure class="frame s13-frame" aria-hidden="true"><img id="s13-img" src="assets/section13.jpg" alt=""></figure>
 <figure class="frame s14-frame" aria-hidden="true"><img id="s14-img" src="assets/section14.jpg" alt=""></figure>
-
 <figure class="frame s15-frame" aria-hidden="true">
 <img id="s15-img" src="assets/section15.jpg" alt="">
 </figure>
@@ -897,18 +870,8 @@ pointer-events: none !important;
 <div class="s1-overlay">
 <div class="s1-rail">
 <div class="s1-text" id="s1-text">
-<p><strong>HOURS AFTER MY</strong> mother took her last breath on earth…</p>
-<p>After we opened the windows to let the spirits out…</p>
-<p>After we lit incense stick after incense stick…</p>
-<p>After we watched MMA fighters on TV in the basement…</p>
-<p>And the smoke kept rising. The chain must not be broken. **\*\*\*Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam varius, metus nec tincidunt tincidunt, nunc erat tincidunt sapien, vel laoreet lacus nisi eget justo. Nullam ut placerat odio.
-Nulla vitae eros nec mi rutrum eleifend at nec dui. Duis ultricies consequat lobortis.
-Fusce a aliquam lorem, ac lacinia est. Praesent rutrum odio eget tellus mattis, at malesuada lorem dapibus.
-Pellentesque accumsan dui a lectus porttitor vestibulum. Nam venenatis urna elit, at condimentum eros elementum interdum. Proin sed semper nulla.
-Mauris placerat non dui at pretium. Ut aliquam tellus ipsum, non porta ex congue a.
-Vestibulum molestie egestas tellus, vitae tincidunt nibh mollis nec.
-Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non turpis. **\*\*\*</p>
+<p><strong>טקסט דמה עברי (S1).</strong> יישור ימין לשמאל (RTL) והגופן Liebling Hebrew. זוהי פסקת דמה להצגת המבנה והזרימה של המקטע. יש לבדוק את התצוגה על מנת לוודא שהגרפיקה מתאימה לכיווניות החדשה.</p>
+<p><strong>פסקת דמה נוספת.</strong> הממצאים שלנו מצביעים על חשיבות המערכת האקולוגית העירונית כבסיס לחוסן חברתי וכלכלי. נדרשת חשיבה מחודשת על תכנון עירוני בר-קיימא. </p>
 </div>
 </div>
 </div>
@@ -917,18 +880,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s2-overlay">
 <div class="s2-rail">
 <div class="s2-text" id="s2-text">
-<p><strong>SECTION TWO</strong> opens as the previous memory fades…</p>
-<p>Now the perspective widens to a new frame…</p>
-<p>The city’s edge meets the garden…</p>
-<p>We follow the lines of growth and care…</p>
-<p>And learn how places hold time. **\*\*\*Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam varius, metus nec tincidunt tincidunt, nunc erat tincidunt sapien, vel laoreet lacus nisi eget justo. Nullam ut placerat odio.
-Nulla vitae eros nec mi rutrum eleifend at nec dui. Duis ultricies consequat lobortis.
-Fusce a aliquam lorem, ac lacinia est. Praesent rutrum odio eget tellus mattis, at malesuada lorem dapibus.
-Pellentesque accumsan dui a lectus porttitor vestibulum. Nam venenatis urna elit, at condimentum eros elementum interdum. Proin sed semper nulla.
-Mauris placerat non dui at pretium. Ut aliquam tellus ipsum, non porta ex congue a.
-Vestibulum molestie egestas tellus, vitae tincidunt nibh mollis nec.
-Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non turpis. **\*\*\*</p>
+<p><strong>טקסט דמה עברי (S2).</strong> מקטע שני לבדיקת ה-RTL. אנו בוחנים את הקשר בין מרחב ציבורי ואיכות חיים בהקשר הישראלי. הצמיחה האזרחית והירוק העירוני מהווים מוקד מרכזי בתפיסה הגרדניסיטית. </p>
+<p>זוהי פסקת המשך לבדיקת זרימת הטקסט ותגובת הגופן. </p>
 </div>
 </div>
 </div>
@@ -939,9 +892,9 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="sTAMA-overlay">
 <div class="sTAMA-rail">
 <div class="sTAMA-text" id="sTAMA-text">
-<p><strong>TAMA PLAN</strong></p>
-<p>Your text content for the TAMA Plan goes here...</p>
-<p>It behaves exactly like Section 2 (Right Rail / Left Image).</p>
+<p><strong>תוכנית תמ"א.</strong></p>
+<p>טקסט דמה עברי למקטע תמ"א. מקטע זה מתנהג כמו מקטע 2 (טקסט משמאל / תמונה מימין). </p>
+<p>יש לבדוק את יישור הטקסט והמעבר אל מקטע 3. </p>
 </div>
 </div>
 </div>
@@ -952,11 +905,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s4-overlay">
 <div class="s4-rail">
 <div class="s4-text" id="s4-text">
-<p><strong>SECTION FOUR</strong> returns to the tight frame…</p>
-<p>Left-rail narration continues the thread…</p>
-<p>The horizontal image sits steady at right…</p>
-<p>Margins and rhythm match Section One…</p>
-<p>And the cycle of views goes on.</p>
+<p><strong>טקסט דמה עברי (S4).</strong> חזרה ליישור ימין. הממצאים שלנו מצביעים על חשיבות המערכת האקולוגית העירונית כבסיס לחוסן חברתי וכלכלי. </p>
+<p>פסקת דמה נוספת: נדרשת חשיבה מחודשת על תכנון עירוני בר-קיימא. </p>
 </div>
 </div>
 </div>
@@ -967,11 +917,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s5-overlay">
 <div class="s5-rail">
 <div class="s5-text" id="s5-text">
-<p><strong>SECTION FIVE</strong> shifts the rail again…</p>
-<p>Now the narration hugs the right margin…</p>
-<p>While the image holds the left field of view…</p>
-<p>Framing the next turn in the story…</p>
-<p>With the same cadence and pace.</p>
+<p><strong>טקסט דמה עברי (S5).</strong> החלפת יישור לשמאל. אנו מתמקדים ביעדי הפיתוח בר-קיימא (SDG) ככלי מדידה להצלחת יוזמות ירוקות במרחב הציבורי. </p>
+<p>פסקת המשך: ירוק אזרחי הוא לא רק צבע, אלא גישה מערכתית. </p>
 </div>
 </div>
 </div>
@@ -984,11 +931,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s9-overlay">
 <div class="s9-rail">
 <div class="s9-text" id="s9-text">
-<p><strong>SECTION NINE</strong> brings us back to the close frame…</p>
-<p>The left rail carries the narration forward…</p>
-<p>On the right, the image steadies the scene…</p>
-<p>Margins, rhythm, and pacing mirror Section One…</p>
-<p>So the story breathes in familiar cadence.</p>
+<p><strong>טקסט דמה עברי (S9).</strong> חזרה ליישור ימין. יישור ימין לשמאל (RTL) והגופן Liebling Hebrew. זוהי פסקת דמה להצגת המבנה והזרימה של המקטע. </p>
+<p>יש לבדוק את התצוגה על מנת לוודא שהגרפיקה מתאימה לכיווניות החדשה. </p>
 </div>
 </div>
 </div>
@@ -999,11 +943,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s11-overlay">
 <div class="s11-rail">
 <div class="s11-text" id="s11-text">
-<p><strong>SECTION ELEVEN</strong> continues the thread…</p>
-<p>Back to the left rail; image anchors the right…</p>
-<p>Margins and rhythm unchanged…</p>
-<p>Standard crossfades keep the cadence…</p>
-<p>As the story settles into focus.</p>
+<p><strong>טקסט דמה עברי (S11).</strong> המשך ביישור ימין. הצמיחה האזרחית והירוק העירוני מהווים מוקד מרכזי בתפיסה הגרדניסיטית. אנו בוחנים את הקשר בין מרחב ציבורי ואיכות חיים בהקשר הישראלי. </p>
+<p>זוהי פסקת דמה להמשך הבדיקה. </p>
 </div>
 </div>
 </div>
@@ -1014,11 +955,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s13-overlay">
 <div class="s13-rail">
 <div class="s13-text" id="s13-text">
-<p><strong>SECTION THIRTEEN</strong> returns to the close frame…</p>
-<p>Left-rail narration pulls us forward…</p>
-<p>The right-side image steadies the scene…</p>
-<p>Margins and rhythm echo Section One…</p>
-<p>Breathing at the familiar pace.</p>
+<p><strong>טקסט דמה עברי (S13).</strong> חזרה ליישור ימין. יישור ימין לשמאל (RTL) והגופן Liebling Hebrew. הממצאים שלנו מצביעים על חשיבות המערכת האקולוגית העירונית. </p>
+<p>נדרשת חשיבה מחודשת על תכנון עירוני בר-קיימא. </p>
 </div>
 </div>
 </div>
@@ -1027,11 +965,8 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s14-overlay">
 <div class="s14-rail">
 <div class="s14-text" id="s14-text">
-<p><strong>SECTION FOURTEEN</strong> flips the rail…</p>
-<p>Text to the right, image to the left…</p>
-<p>Pacing and fades match Section Two…</p>
-<p>As the view widens and settles…</p>
-<p>Into the next cadence.</p>
+<p><strong>טקסט דמה עברי (S14).</strong> החלפת יישור לשמאל. אנו מתמקדים ביעדי הפיתוח בר-קיימא (SDG) ככלי מדידה להצלחת יוזמות ירוקות במרחב הציבורי. </p>
+<p>פסקת המשך: ירוק אזרחי הוא לא רק צבע, אלא גישה מערכתית. </p>
 </div>
 </div>
 </div>
@@ -1040,17 +975,17 @@ Fusce quis magna elit. Aenean mi tellus, fermentum eu pharetra id, fermentum non
 <div class="s15-overlay">
 <div class="s15-rail">
 <div class="s15-text" id="s15-text">
-<p><strong>Gardenicity</strong> Writing, Design, Curation:<br>
-Megama/Rebecca Sternberg, Keren Avni</p>
-<p><strong>Photo Credits:</strong><br>
-1 - Survey of Israel (MAPI); 2-10, 15-25 - Matson (G. Eric and Edith) Photograph Collection, LOC;
-11-14 - NLI Boris Carmi; 26 - Tomer Appelbaum</p>
+<p><strong>גרדניסיטי</strong> כתיבה, עיצוב ואוצרות:<br>
+Megama / רבקה שטרנברג, קרן אבני</p>
+<p><strong>קרדיטים לצילומים:</strong><br>
+1 – המרכז למיפוי ישראל (מפ״י); 2–10, 15–25 – אוסף הצילומים של משפחת מטסון (G. Eric and Edith), ספריית הקונגרס;<br>
+11–14 – הספרייה הלאומית, בוריס כרמי; 26 – תומר אפלבאום</p>
 <p>
-<a href="https://www.megama.net" target="_blank">Gardencity what did TAMA See?</a><br>
-<a href="https://www.megama.net" target="_blank">Civic Green</a><br>
-<a href="https://www.megama.net" target="_blank">Growth</a><br>
-<a href="https://www.megama.net" target="_blank">Leafy SDGs</a><br>
-<a href="https://www.megama.net" target="_blank">EN/עב</a>
+<a href="https://www.megama.net" target="_blank">מה גדס ראה?</a><br>
+<a href="https://www.megama.net" target="_blank">ירוק אזרחי</a><br>
+<a href="https://www.megama.net" target="_blank">מחיה</a><br>
+<a href="https://www.megama.net" target="_blank">SDG עלעלי</a><br>
+<a href="https://www.megama.net" target="_blank">עב/EN</a>
 </p>
 </div>
 </div>
@@ -1059,6 +994,7 @@ Megama/Rebecca Sternberg, Keren Avni</p>
 <section class="after"></section>
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+
 <script>
 (function(){
 const root=document.documentElement;
@@ -1181,6 +1117,7 @@ function markS15Ready(){ root.style.setProperty('--s15Ready','1'); }
 if (s15Img && s15Img.complete && s15Img.naturalWidth > 0) markS15Ready();
 else if (s15Img) s15Img.addEventListener('load', markS15Ready, { once:true });
 
+
 function update(){
 /* HERO choreography */
 const p=progressOf(driver);
@@ -1239,6 +1176,7 @@ root.style.setProperty('--s11Overlay',(s11>0 && s11<1)?1:0);
 root.style.setProperty('--s13Overlay',(s13>0 && s13<1)?1:0);
 root.style.setProperty('--s14Overlay',(s14>0 && s14<1)?1:0);
 root.style.setProperty('--s15Overlay',(s15>0 && s15<1)?1:0);
+
 root.style.setProperty('--heroAlpha',(1-s1).toFixed(3));
 root.style.setProperty('--heroBlur',(s1*0.8).toFixed(3));
 
@@ -1264,7 +1202,6 @@ const s3ZoomRaw = clamp((s3 - 0.82) / 0.18, 0, 1); root.style.setProperty('--s3S
 const s8ZoomRaw = clamp((s8 - 0.82) / 0.18, 0, 1); root.style.setProperty('--s8Scale', (1 + 0.08 * easeInOutCubic(s8ZoomRaw)).toFixed(3));
 const s12ZoomRaw = clamp((s12 - 0.82) / 0.18, 0, 1);root.style.setProperty('--s12Scale', (1 + 0.08 * easeInOutCubic(s12ZoomRaw)).toFixed(3));
 const s15ZoomRaw = clamp((s15 - 0.82) / 0.18, 0, 1);root.style.setProperty('--s15Scale', (1 + 0.08 * easeInOutCubic(s15ZoomRaw)).toFixed(3));
-
 
 /* ===== Crossfades (standardized) ===== */
 const FADE_FRAC = 0.35;
@@ -1364,7 +1301,6 @@ const x14_15 = clamp(s15/FADE_FRAC, 0, 1);
 const s15Group = (getComputedStyle(root).getPropertyValue('--s15Ready')==='1') ? x14_15 : 0;
 s14Alpha = s14Alpha * ((getComputedStyle(root).getPropertyValue('--s15Ready')==='1') ? (1 - x14_15) : 1);
 
-
 /* ===== Internal galleries (unchanged) ===== */
 /* gallery-A (4 imgs, stepped crossfade) */
 const INTERNAL_START_A = FADE_FRAC;
@@ -1376,14 +1312,11 @@ let a0=1, a1=0, a2=0, a3=0;
 const TA1=A_HOLD;
 const TA2=TA1 + A_FADE + A_HOLD;
 const TA3=TA2 + A_FADE + A_HOLD;
-
 const g1=step(tA, TA1, A_FADE); a0*= (1 - g1); a1 = Math.max(a1, g1);
 const g2=step(tA, TA2, A_FADE); a1*= (1 - g2); a2 = Math.max(a2, g2);
 const g3=step(tA, TA3, A_FADE); a2*= (1 - g3); a3 = Math.max(a3, g3);
-
 const galAGroup2 = (getComputedStyle(root).getPropertyValue('--galAReady')==='1') ? clamp(galA/FADE_FRAC,0,1) : 0;
 const galAOut2 = (1 - clamp(sTAMA/FADE_FRAC,0,1)); /* MODIFIED: fades out on sTAMA */
-
 root.style.setProperty('--galAImg0Opacity', (a0 * galAGroup2 * galAOut2).toFixed(3));
 root.style.setProperty('--galAImg1Opacity', (a1 * galAGroup2 * galAOut2).toFixed(3));
 root.style.setProperty('--galAImg2Opacity', (a2 * galAGroup2 * galAOut2).toFixed(3));
@@ -1396,17 +1329,14 @@ const B_FADE = 0.22, B_HOLD = (1 - 4*B_FADE)/5 * 1.25;
 const normB = 1/(5*B_HOLD + 4*B_FADE);
 const BF=B_FADE*normB, BH=B_HOLD*normB;
 const TB1=BH, TB2=TB1+BF+BH, TB3=TB2+BF+BH, TB4=TB3+BF+BH;
-
 let b0=1,b1=0,b2=0,b3=0,b4=0;
 const h=(t,s,w)=>clamp((t-s)/w,0,1);
 const gB1=h(tB, TB1, BF); b0*= (1 - gB1); b1 = Math.max(b1, gB1);
 const gB2=h(tB, TB2, BF); b1*= (1 - gB2); b2 = Math.max(b2, gB2);
 const gB3=h(tB, TB3, BF); b2*= (1 - gB3); b3 = Math.max(b3, gB3);
 const gB4=h(tB, TB4, BF); b3*= (1 - gB4); b4 = Math.max(b4, gB4);
-
 const galBGroup2 = (getComputedStyle(root).getPropertyValue('--galBReady')==='1') ? clamp(galB/FADE_FRAC,0,1) : 0;
 const galBOut2 = (1 - clamp(s8/FADE_FRAC,0,1));
-
 root.style.setProperty('--galBImg0Opacity', (b0 * galBGroup2 * galBOut2).toFixed(3));
 root.style.setProperty('--galBImg1Opacity', (b1 * galBGroup2 * galBOut2).toFixed(3));
 root.style.setProperty('--galBImg2Opacity', (b2 * galBGroup2 * galBOut2).toFixed(3));
@@ -1420,7 +1350,6 @@ const C_FADE = 0.22, C_HOLD = (1 - 5*C_FADE)/6 * 1.25; /* match style of B */
 const normC = 1/(6*C_HOLD + 5*C_FADE);
 const CF=C_FADE*normC, CH=C_HOLD*normC;
 const TC1=CH, TC2=TC1+CF+CH, TC3=TC2+CF+CH, TC4=TC3+CF+CH, TC5=TC4+CF+CH;
-
 let c0=1,c1=0,c2=0,c3=0,c4=0,c5=0;
 const stepC=(t,s,w)=>clamp((t-s)/w,0,1);
 const gC1=stepC(tC, TC1, CF); c0*= (1 - gC1); c1 = Math.max(c1, gC1);
@@ -1428,17 +1357,14 @@ const gC2=stepC(tC, TC2, CF); c1*= (1 - gC2); c2 = Math.max(c2, gC2);
 const gC3=stepC(tC, TC3, CF); c2*= (1 - gC3); c3 = Math.max(c3, gC3);
 const gC4=stepC(tC, TC4, CF); c3*= (1 - gC4); c4 = Math.max(c4, gC4);
 const gC5=stepC(tC, TC5, CF); c4*= (1 - gC5); c5 = Math.max(c5, gC5);
-
 const galCGroup2 = (getComputedStyle(root).getPropertyValue('--galCReady')==='1') ? clamp(galC/FADE_FRAC,0,1) : 0;
 const galCOut2 = (1 - clamp(s11/FADE_FRAC,0,1));
-
 root.style.setProperty('--galCImg0Opacity', (c0 * galCGroup2 * galCOut2).toFixed(3));
 root.style.setProperty('--galCImg1Opacity', (c1 * galCGroup2 * galCOut2).toFixed(3));
 root.style.setProperty('--galCImg2Opacity', (c2 * galCGroup2 * galCOut2).toFixed(3));
 root.style.setProperty('--galCImg3Opacity', (c3 * galCGroup2 * galCOut2).toFixed(3));
 root.style.setProperty('--galCImg4Opacity', (c4 * galCGroup2 * galCOut2).toFixed(3));
 root.style.setProperty('--galCImg5Opacity', (c5 * galCGroup2 * galCOut2).toFixed(3));
-
 
 /* ===== Apply section frame opacities ===== */
 root.style.setProperty('--s1ImgOpacity', s1Alpha.toFixed(3));
@@ -1455,148 +1381,39 @@ root.style.setProperty('--s12ImgOpacity', s12AlphaOut2.toFixed(3));
 root.style.setProperty('--s13ImgOpacity', s13Alpha.toFixed(3));
 root.style.setProperty('--s14ImgOpacity', s14Alpha.toFixed(3));
 root.style.setProperty('--s15ImgOpacity', s15Group.toFixed(3));
+
 }
 
-async function init() {
-if (document.fonts && document.fonts.ready) {
-try { await document.fonts.ready; } catch (e) {}
-}
 measureHero();
-measureS1(); measureS2(); measureSTAMA(); measureS4(); measureS5(); measureS9(); measureS11(); measureS13(); measureS14(); measureS15();
+measureS1();
+measureS2();
+measureSTAMA(); /* NEW */
+measureS4();
+measureS5();
+measureS9();
+measureS11();
+measureS13();
+measureS14();
+measureS15();
 
-addEventListener('load', ()=> {
-measureHero(); measureS1(); measureS2(); measureSTAMA(); measureS4(); measureS5();
-measureS9(); measureS11(); measureS13(); measureS14(); measureS15();
-update();
-}, { once:true });
-
-addEventListener('resize', ()=> {
-measureHero(); measureS1(); measureS2(); measureSTAMA(); measureS4(); measureS5();
-measureS9(); measureS11(); measureS13(); measureS14(); measureS15();
+window.addEventListener('scroll', update);
+window.addEventListener('resize', ()=>{
+measureHero();
+measureS1();
+measureS2();
+measureSTAMA(); /* NEW */
+measureS4();
+measureS5();
+measureS9();
+measureS11();
+measureS13();
+measureS14();
+measureS15();
 update();
 });
-addEventListener('scroll', update, { passive:true });
 update();
-}
-
-init();
 })();
 </script>
 
-<script>
-/* ---------------------------------------------------- */
-/* ADDED: EXPLICIT EXIT BUTTON LOGIC */
-/* ---------------------------------------------------- */
-function handleExitClickSimple() {
-if (!map) return;
-const nextSectionElement = document.getElementById('s5-wrap'); // Target S5
-
-// 1. Disable ALL map controls (explicitly releases the scroll lock)
-map.scrollZoom.disable();
-map.dragPan.disable();
-map.doubleClickZoom.disable();
-map.touchZoomRotate.disable();
-map.getCanvas().style.cursor = ''; // Reset cursor
-
-// 2. Force scroll down to the next section (S5)
-if (nextSectionElement) {
-window.scrollTo({
-top: nextSectionElement.offsetTop,
-behavior: 'smooth'
-});
-
-// 3. Safety: Remove 'active' class from map frame
-// This ensures the implicit scroll listeners don't re-engage the map.
-if (mapFrame) {
-mapFrame.classList.remove('active');
-}
-// Hide the button immediately on click
-if (exitButton) {
-exitButton.classList.remove('visible');
-}
-}
-}
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoia2F2bmkiLCJhIjoiY2s5YjBqNGY1MGV4aTNobnk0amJncWZweCJ9.gZK_r9CYmb6ZN_mZVmgjNg';
-const MAP_START_CENTER = [34.770081, 32.079031]; // Lon, Lat
-const MAP_START_ZOOM = 15.99;
-const mapFrame = document.querySelector('.sMapA-frame');
-const mapContainer = document.getElementById('mapA-container');
-const exitButton = document.getElementById('exit-map-button'); // NEW: Get button
-const mapSection = document.querySelector('#sMapA-wrap');
-
-// Initialize the Mapbox GL JS Map
-const map = new mapboxgl.Map({
-container: 'mapA-container', // HTML element ID
-style: 'mapbox://styles/kavni/cmd3iy6e600em01s9duln4zpp', // Your Style URL 
-center: MAP_START_CENTER,
-zoom: MAP_START_ZOOM,
-interactive: false // Start non-interactive
-});
-
-// Disable interaction methods initially
-map.on('load', () => {
-map.scrollZoom.disable();
-map.dragPan.disable();
-map.doubleClickZoom.disable();
-map.touchZoomRotate.disable();
-});
-
-if (exitButton) {
-exitButton.addEventListener('click', handleExitClickSimple);
-}
-
-function toggleMapPointer() {
-if (!mapFrame || !mapSection) return;
-// Visibility check (same logic as used in the main JS)
-const rect = mapSection.getBoundingClientRect();
-const visible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
-
-if (visible) {
-mapFrame.classList.add('active');
-// Show button (via class 'visible' on the button itself)
-if(exitButton) exitButton.classList.add('visible');
-// Enable map interactions when visible
-map.scrollZoom.enable();
-map.dragPan.enable();
-map.doubleClickZoom.enable();
-map.touchZoomRotate.enable();
-} else {
-mapFrame.classList.remove('active');
-// Hide button
-if(exitButton) exitButton.classList.remove('visible');
-// Disable map interactions when hidden, releasing the scroll lock
-map.scrollZoom.disable();
-map.dragPan.disable();
-map.doubleClickZoom.disable();
-map.touchZoomRotate.disable();
-}
-}
-
-// === HANDOVER FIX ===
-// The core fix: when the mouse leaves the map container, we immediately disable scrollZoom
-// This means the next scroll wheel input will control the main page, not the map.
-mapContainer.addEventListener('mouseleave', () => {
-if (map) {
-map.scrollZoom.disable();
-}
-});
-
-// When the mouse enters, if the map section is visible, we re-enable scrollZoom
-mapContainer.addEventListener('mouseenter', () => {
-const rect = mapSection.getBoundingClientRect();
-const visible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
-if (map && visible) {
-map.scrollZoom.enable();
-}
-});
-
-// Add listeners for the main scrollytelling control
-window.addEventListener('scroll', toggleMapPointer, { passive: true });
-window.addEventListener('resize', toggleMapPointer);
-
-// Initial call to set the correct state
-toggleMapPointer();
-</script>
 </body>
 </html>
